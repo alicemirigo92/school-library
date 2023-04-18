@@ -1,4 +1,4 @@
-# <a name="readme-top">School-library</a>
+<a name="readme-top">School-library</a>
 
 # 📗 Table of Contents
 
@@ -155,7 +155,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project support by giving it a start.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

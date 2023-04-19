@@ -1,5 +1,3 @@
-<a name="readme-top">School-library</a>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -22,9 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 School-library <a name="about-project"></a>
+# 📖 SCHOOL-LIBRARY <a name="about-project"></a>
 
-**School-library** is how to use a module inside your class.
+**School-Library** is an OOP(Object Oriented PRogramming) school library app that allows a user to add students, teachers, new books and save records of borrowers, books borrowed and when they were borrowed.
 
 ## 🛠 Built With <a name="built-with"> Ruby</a>
 
@@ -34,7 +32,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Use School-library]**
+- **[classes and instance objects]**
+- **[Decorator design pattern]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,63 +59,31 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
-```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
+  git clone https://github.com/alicemirigo92/school-library.git
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
-```sh
   cd my-project
   gem install
-```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+run rspec
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,14 +97,13 @@ Example:
 - Twitter: [@Gathonimirigo](https://twitter.com/GathoniMirigo)
 - LinkedIn: [Alice](www.linkedin.com/in/alice-mirigo)
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **None**
+- [**Basic UI**]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,7 +113,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/alicemirigo92/school-library.git/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,7 +121,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project support by giving it a start.
+If you like this project, reach out to me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,7 +134,6 @@ I would like to appreciate microverse
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.

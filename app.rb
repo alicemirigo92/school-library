@@ -71,7 +71,7 @@ class App
     else
       puts 'You can only create a teacher(1) or student(2)'
     end
-    # puts
+    puts
   end
 
   def create_a_teacher
@@ -86,7 +86,7 @@ class App
     teacher = Teacher.new(age, name, specialization)
     @people << teacher
     puts "#{teacher.name} who specializes in #{teacher.specialization} has been created successfully.\n"
-    # puts
+    puts
   end
 
   def create_a_student
@@ -117,55 +117,54 @@ class App
   end
 
   def create_rental
-    book = select_book
-    person = select_person
-    rental_date = enter_rental_date
-    create_rental_record(rental_date, book, person)
-  end
-
-  def select_book
     puts 'Select a book by entering the corresponding number:'
     @books.each.with_index(1) do |book, i|
       puts "#{i}. #{book.title} by #{book.author}"
     end
-
     selected_book = gets.chomp.to_i
     book = @books[selected_book - 1]
-
     if book.nil?
       puts 'Invalid book selection'
-      return nil
+      return
     end
 
-    book
-  end
-
-  def select_person
     puts 'Select a person by entering the corresponding number:'
     @people.each.with_index(1) do |person, i|
       puts "#{i}. [#{person.class}] name: #{person.name}, ID: #{person.id}, age: #{person.age}"
     end
-
     selected_person = gets.chomp.to_i
     person = @people[selected_person - 1]
-
     if person.nil?
       puts 'Invalid person selection.'
-      return nil
+      return
     end
 
-    person
-  end
-
-  def enter_rental_date
     puts 'Enter rental start date(yyyy-mm-dd):'
-    gets.chomp
-  end
-
-  def create_rental_record(rental_date, book, person)
-    rental = Rental.new(rental_date, book, person)
+    entered_date = gets.chomp
+    date = entered_date
+    rental = Rental.new(date, book, person)
     @rentals << rental
     puts "Rental created successfully\n"
     puts
+  end
+
+  def list_rentals_for_a_person
+    puts 'Enter the ID of the person:'
+    person_id = gets.chomp.to_i
+    person = person_by_id(person_id)
+    if person.nil?
+      puts "Person with ID #{person_id} does not exist, cannot list rentals."
+      return
+    end
+
+    rentals = @rentals.select { |rental| rental.person == person }
+    rentals.each do |rental|
+      puts "Rentals:\n Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}\n"
+      puts
+    end
+  end
+
+  def person_by_id(id)
+    @people.find { |person| person.id == id }
   end
 end

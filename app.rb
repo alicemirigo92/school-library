@@ -1,34 +1,34 @@
-# require './person'
-# require './book'
-# require './rental'
-# require './student'
-# require './teacher'
-# class App
-#   def initialize
-#     @people = []
-#     @books = []
-#     @rentals = []
-#   end
+require './person'
+require './book'
+require './rental'
+require './student'
+require './teacher'
+class App
+  def initialize
+    @people = []
+    @books = []
+    @rentals = []
+  end
 
-#   # rubocop:disable Metrics/CyclomaticComplexity
-#   def main
-#     loop do
-#       homepage
-#       selected_option = gets.chomp.to_i
-#       case selected_option
-#       when 1 then list_all_books
-#       when 2 then list_all_people
-#       when 3 then create_teacher_or_student
-#       when 4 then create_a_book
-#       when 5 then create_rental
-#       when 6 then list_rentals_for_a_person
-#       when 7
-#         puts 'Thanks for using this app'
-#         exit
-#       else puts 'Error: Enter a valid option.'
-#       end
-#     end
-#   end
+  # rubocop:disable Metrics/CyclomaticComplexity
+  def main
+    loop do
+      homepage
+      selected_option = gets.chomp.to_i
+      case selected_option
+      when 1 then list_all_books
+      when 2 then list_all_people
+      when 3 then create_teacher_or_student
+      when 4 then create_a_book
+      when 5 then create_rental
+      when 6 then list_rentals_for_a_person
+      when 7
+        puts 'Thanks for using this app'
+        exit
+      else puts 'Error: Enter a valid option.'
+      end
+    end
+  end
 
   # rubocop:enable Metrics/CyclomaticComplexity
   private
